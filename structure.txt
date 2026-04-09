@@ -1,0 +1,51 @@
+Ñòðóêòóðà ïàïîê
+Ñåðèéíûé íîìåð òîìà: 9EDA-2584
+E:.
+¦   .dockerignore
+¦   .gitignore
+¦   docker-compose.yml
+¦   Dockerfile
+¦   go.mod
+¦   go.sum
+¦   README.md
+¦   structure.txt
+¦   
++---cmd
+¦   L---api
+¦           main.go
+¦           
++---internal
+¦   +---domain
+¦   ¦   L---task
+¦   ¦           errors.go
+¦   ¦           task.go
+¦   ¦           
+¦   +---infrastructure
+¦   ¦   L---postgres
+¦   ¦           pool.go
+¦   ¦           
+¦   +---repository
+¦   ¦   L---postgres
+¦   ¦           task_repository.go
+¦   ¦           
+¦   +---transport
+¦   ¦   L---http
+¦   ¦       ¦   router.go
+¦   ¦       ¦   
+¦   ¦       +---docs
+¦   ¦       ¦       handler.go
+¦   ¦       ¦       openapi.json
+¦   ¦       ¦       
+¦   ¦       L---handlers
+¦   ¦               dto.go
+¦   ¦               task_handler.go
+¦   ¦               
+¦   L---usecase
+¦       L---task
+¦               errors.go
+¦               ports.go
+¦               service.go
+¦               
+L---migrations
+        0001_create_tasks.up.sql
+        
