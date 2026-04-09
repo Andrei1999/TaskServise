@@ -49,12 +49,14 @@ http://localhost:8080/swagger/openapi.json
 
 Основные маршруты:
 
+**Задачи**
 - `POST /api/v1/tasks`
 - `GET /api/v1/tasks`
 - `GET /api/v1/tasks/{id}`
 - `PUT /api/v1/tasks/{id}`
 - `DELETE /api/v1/tasks/{id}`
 
+**Шаблоны**
 - `POST /api/v1/templates`        Создать шаблон (сразу генерирует задачи на месяц вперёд) 
 - `GET /api/v1/templates`         Получить список всех шаблонов 
 - `GET /api/v1/templates/{id}`    Получить шаблон по ID 
